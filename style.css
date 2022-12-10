@@ -1,0 +1,719 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #ffff;
+}
+html {
+    box-sizing: border-box;
+    font-size: calc(100vw / 1440 * 10);
+}
+body{
+    background: #000000
+}
+button {
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+a:hover{
+    opacity: .6;
+}
+button:hover{
+    opacity: .6;
+}
+
+.container{
+    margin: 2.3rem 8.5rem;
+}
+.cookie{
+    position: fixed;
+    display: flex;
+    background-color: #212834;
+    width: 97%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.1rem 2.4rem;
+    bottom: -30%;
+    z-index: 10;
+    opacity: 1;
+}
+
+.close__cookie{
+    bottom: -30%;
+    transition: 0.7s ease-in-out;
+    opacity: 0;
+}
+.cookie .cookie__text{
+    font-family: 'Noto Sans';
+    font-size: 1.4rem;
+}
+.cookie .cookie__btn{
+    font-family: 'Noto Sans';
+    font-size: 1.4rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: 0.5px solid #FFFFFF;
+    border-radius: 6px;
+    padding: 1.5rem 4.1rem;
+}
+.container .header{
+    display: flex;
+    align-items: center;
+}
+.container .header .header__logo{
+    display: flex;
+    margin-right: 10.8rem;
+    align-items: center;
+}
+.container .header .header__logo .logo-img{
+    width: 10.7rem;
+    height: 10.9rem;
+}
+.container .header .header__logo .logo-text{
+    width: 9.6rem;
+    height: 2.5rem;
+}
+.container .header .header__login{
+    display: flex;
+    align-items: center;
+}
+.container .header .header__login .login-img{
+    margin-right: 1.4rem;
+    width: 2.6rem;
+    height: 2.5rem;
+}
+.container .header .header__login .login-text{
+    font-family: 'Noto Sans Medium';
+    font-size: 1.8rem;
+    border-bottom: 0.1rem #ffff solid;
+}
+.works__smarter{
+    display: flex;
+    justify-content: space-between;
+}
+.works__smarter .left-block{
+    margin-top: 14.3rem;
+}
+.works__smarter .left-block .left-block__title {
+    font-family: 'Montserrat';
+    font-size: 6.4rem;
+}
+
+.works__smarter .left-block .left-block__descr{
+    display: flex;
+    margin-top: 0.5rem;
+    align-items: flex-end;
+}
+.works__smarter .left-block .left-block__descr .line__block .gradient{
+    position: relative;
+    background: radial-gradient(rgba(96, 92, 234, 0.5) 0%, rgba(96, 92, 234, 0.3) 17%, rgba(6, 4, 54, 0) 82%);
+    height: 15rem;
+    width: 15rem;
+    left: 1rem;
+    bottom: 1rem;
+}
+.works__smarter .left-block .left-block__descr .line__block .line{
+    position: relative;
+    width: 13.943rem;
+    height: 0.4rem;
+    background-color: #ffff;
+    transform: rotate(120.61deg);
+    bottom: 6rem;
+    border:none;
+}
+.works__smarter .left-block .left-block__descr .txt{
+    font-family: 'Noto Sans';
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+.works__smarter .right__block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.works__smarter .right__block .right__block__blur{
+    position: absolute;
+    width: 70vw;
+    z-index: -1;
+    top: 0rem;
+    right: 0rem;
+}
+.works__smarter .right__block .right__block__phone{
+    position: relative;
+    bottom: 15rem;
+    width: 61.1rem;
+    height: 95.7rem;
+}
+.download{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    bottom: 17rem;
+}
+.download .download__text{
+    font-family: 'Montserrat';
+    font-size: 3.5rem;
+}
+.img-app-store{
+    margin-right: 1.4rem;
+    width: 16.35rem;
+    height: 5.133rem;
+}
+.img-google-play{
+    margin-left: 1.4rem;
+    width: 16.35rem;
+    height: 5.133rem;
+}
+.contact{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: -1.2rem;
+}
+.contact .contact__block{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    border: 0.2rem solid rgba(255, 255, 255, 0.5);
+    border-radius: 2.1rem;
+    padding: 6.4rem 5.5rem;
+    width: 50.3rem;
+}
+.contact .contact__member{
+    margin-right: 4.05rem;
+}
+.contact .contact__parthner{
+    margin-left: 4.05rem;
+}
+.contact  .contact__text{
+    font-family: 'Noto Sans Bold';
+    font-size: 3rem;
+}
+.contact  .contact__mail{
+    font-family: 'Noto Sans';
+    font-size: 2.4rem;
+    text-decoration: none;
+    border-bottom: 0.1rem #ffff solid;
+    margin-top: 3rem;
+}
+.contact .contact__parthner .contact__login .contact__login-text{
+    font-family: 'Noto Sans';
+    font-size: 2.4rem;
+    border-bottom: 0.1rem #ffff solid;
+    margin-top: 3rem;
+}
+.our-mission{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0rem 0rem;
+    overflow: hidden;
+}
+.our-mission .our-mission__img{
+    position: relative;
+    right: 30%;
+    width: 61.1rem;
+    height: 95.7rem;
+    transform: rotate(90deg);
+
+}
+.our-mission .our-mission__text{
+    position: relative;
+    bottom: 5rem;
+    overflow: hidden;
+    left: 0;
+}
+.our-mission .our-mission__text .our-mission__title{
+    font-family: 'Montserrat';
+    font-size: 5.1rem;
+    background: radial-gradient(rgba(241, 1, 191, 0.5) 0%, rgba(241, 1, 191, 0.3) 0%, rgba(241, 1, 191, 0) 74%);
+    background-position: 15.5rem 0rem;
+    padding: 2.3rem;
+    padding-right: 1.3rem;
+    background-repeat: no-repeat;
+    background-size: 18.5rem;
+    padding-left: 0;
+}
+.our-mission .our-mission__text .our-mission__descr{
+    font-family: 'Noto Sans';
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+}
+.ID-scanner{
+    display: flex;
+    align-items:flex-end;
+    justify-content: center;
+    background: linear-gradient( rgba(0, 0, 0, 1) , rgba(0, 0, 0, 0) 15%, rgba(0,0,0,1) 90%), url(./src/img/ID-scanner-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.ID-scanner .ID-scanner__img{
+    position: relative;
+    margin-right: 6.4rem;
+    margin-top: 39rem;
+    top: 10rem;
+}
+.ID-scanner .ID-scanner__img .ID-scanner__verification{
+    width: 33.25rem;
+    height: 66.71rem;
+}
+.ID-scanner .ID-scanner__img .ID-scanner__verification:first-child{
+    margin-right: 2.5rem;
+}
+.ID-scanner .ID-scanner__img .ID-scanner__verification:last-child{
+    margin-left: 2.5rem;
+}
+.ID-scanner .ID-scanner__text{
+    margin: 0 0 5rem 6.4rem;
+    position: relative;
+    top: 4rem;
+}
+.ID-scanner .ID-scanner__text .ID-scanner__title{
+    font-family: 'Montserrat';
+    font-size: 5.1rem;
+}
+.ID-scanner .ID-scanner__text .ID-scanner__descr{
+    font-family: 'Noto Sans';
+    font-size: 1.8rem;
+    margin-top: 2.3rem;
+}
+.BI-tool{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20.4rem;
+}
+.BI-tool .BI-tool__text{
+    margin-right: 2.5rem;
+}
+.BI-tool__text:before{
+    content: '';
+    position: absolute;
+    width: 42.6rem;
+    height: 43.8rem;
+    background: linear-gradient(45deg, #F101BF 2.82%, #0066FF 97.06%);
+    opacity: 0.1;
+    filter: blur(125px);
+}
+.BI-tool .BI-tool__text .BI-tool__title{
+    font-family: 'Montserrat';
+    font-size: 5.1rem;
+    margin-left: 10rem;
+    position: relative;
+    top: 16rem;
+}
+.BI-tool .BI-tool__text .BI-tool__descr{
+    font-family: 'Noto Sans';
+    font-size: 1.8rem;
+    margin-left: 10rem;
+    position: relative;
+    top: 17.6rem;
+}
+.BI-tool .BI-tool__img-block{
+    width: 50%;
+}
+.BI-tool .BI-tool__img-block .BI-tool__img{
+    position: relative;
+}
+.BI-tool .BI-tool__img-block .BI-tool__img:nth-child(1){
+    width: 19.2rem;
+    height: 11.4rem;
+    top: 28rem;
+}
+.BI-tool .BI-tool__img-block .BI-tool__img:nth-child(2){
+    width: 23.3rem;
+    height: 4.53rem;
+    top: 14.7rem;
+    right: 7rem;
+}
+.BI-tool .BI-tool__img-block .BI-tool__img:nth-child(3){
+    width: 19.35rem;
+    height: 11.76rem;
+    top: 42.32rem;
+    right: 23.5rem;
+    z-index: 1;
+}
+.BI-tool .BI-tool__img-block .BI-tool__img:nth-child(4){
+    width: 19.38rem;
+    height: 11.76rem;
+    top: 17rem;
+    left: 27rem;
+    z-index: 2;
+}
+.BI-tool .BI-tool__img-block .BI-tool__img:nth-child(5){
+    width: 25.22rem;
+    height: 15rem;
+    left: 9.7rem;
+    bottom: 9.2rem;
+}
+.BI-tool .BI-tool__img-block .BI-tool__img:nth-child(6){
+    width: 28.1rem;
+    height: 5.6rem;
+    top: 9rem;
+    left: 43.2rem;
+}
+.BI-tool .BI-tool__img-block .BI-tool__img:nth-child(7){
+    width: 18.25rem;
+    height: 19.3rem;
+    bottom: 6.06rem;
+    left: 15.7rem;
+}
+.QR-code{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    background:  url(./src/img/DJ-bg.png) no-repeat, url(./src/img/coctail-bg.png) no-repeat 100% 0%;
+    background-size: 50% 60rem;
+    margin-top: 30rem;
+    width: 100%;
+    height: 100%;
+
+}
+.QR-code .QR-code__text{
+    position: relative;
+    top: 17rem;
+    left: 5rem;
+}
+.QR-code .QR-code__text .QR-code__title{
+    font-family: 'Montserrat';
+    font-size: 5.1rem;
+}
+.QR-code .QR-code__text .QR-code__descr{
+    font-family: 'Noto Sans';
+    font-size: 1.8rem;
+    margin-top: 2.3rem;
+}
+.QR-code .QR-code__text .QR-code__img-block{
+    margin-top: 5.8rem;
+}
+.QR-code .QR-code__right-block{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+.QR-code .QR-code__right-block .QR-code__phone-block{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: 8rem;
+}
+.QR-code .QR-code__right-block .QR-code__phone{
+    width: 33.25rem;
+    height: 66.7rem;
+}
+.QR-code .QR-code__right-block .QR-code__phone-left{
+    margin-left: 13rem;
+    position: relative;
+    top: 16.5rem;
+}
+.QR-code .QR-code__right-block .QR-code__phone-block .QR-code__nightlife{
+    width: 13.86rem;
+    height: 5.42rem;
+}
+.QR-code .QR-code__right-block .QR-code__phone-block .QR-code__phone-right{
+    position: relative;
+    top: 50.5rem;
+
+}
+.scan-QR{
+    position: relative;
+    bottom: 15.8rem;
+    background: url(./src/img/NOTAB_bg.svg) no-repeat;
+    background-size: 100% 127%;
+}
+.scan-QR .scan-QR__generate-QR-code{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+.scan-QR .scan-QR__generate-QR-code .scan-QR__gradient{
+    position: relative;
+    bottom: 25rem;
+    width: 102.2rem;
+    height: 95.2rem;
+    background: linear-gradient(12.08deg, #F101BF 2.82%, #0066FF 97.06%);
+    opacity: 0.15;
+    filter: blur(15.5rem);
+    border-radius: 47.6rem;
+    transform: rotate(-0.55deg);
+    z-index: -1;
+}
+.scan-QR .scan-QR__generate-QR-code .scan-QR__img-block .scan-QR__generate-QR-img{
+    position: relative;
+    width: 33.25rem;
+    height: 66.715rem ;
+    top: 70rem;
+    left: 9rem;
+    z-index: 5;
+}
+.scan-QR .scan-QR__generate-QR-code .scan-QR__img-block .scan-QR__arrow{
+    position: relative;
+    top: 30rem;
+    left: 13.3rem;
+    width: 10rem;
+    height: 9rem;
+}
+.scan-QR .scan-QR__generate-QR-code .scan-QR__img-block .scan-QR__inscription{
+    font-family: 'Montserrat';
+    font-size: 2.1rem;
+    position: relative;
+    top: 30.4rem;
+    left: 56.5rem;
+}
+.scan-QR .scan-QR__text{
+    position: relative;
+    bottom: 17rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10rem;
+    flex-direction: row;
+    align-items: center;
+}
+.scan-QR .scan-QR__text .scan-QR__title{
+    font-family: 'Montserrat';
+    font-size: 5.1rem;
+}
+.scan-QR .scan-QR__text .scan-QR__descr{
+    font-family: 'Noto Sans';
+    font-size: 1.8rem;
+}
+.easier-ordering{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    bottom: 14rem;
+}
+.easier-ordering .easier-ordering__text{
+    position: relative;
+    left: 34rem;
+}
+.easier-ordering .easier-ordering__text .easier-ordering__title{
+    font-family: 'Montserrat';
+    font-size: 5.1rem;
+}
+.easier-ordering .easier-ordering__text .easier-ordering__descr{
+    font-family: 'Noto Sans';
+    font-size: 1.8rem;
+    margin-top: 2.3rem;
+}
+.easier-ordering .easier-ordering__text .easier-ordering__gradient{
+    position: relative;
+    left: 30rem;
+    background: linear-gradient(0deg, #F101BF 2.82%, #0066FF 97.06%);
+    opacity: 0.2;
+    filter: blur(10rem);
+    width: 28.6rem;
+    height: 26.7rem;
+}
+.easier-ordering .easier-ordering__img-block{
+    position: relative;
+    bottom: 25rem;
+    height: 71rem;
+}
+.easier-ordering .easier-ordering__img-block .easier-ordering__img{
+    width: 86.8rem;
+    height: 103.8rem;
+}
+.easier-ordering .easier-ordering__img-block .easier-ordering__text-block{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    bottom: 60rem;
+    left: 30rem;
+}
+.easier-ordering .easier-ordering__img-block .easier-ordering__text-block .easier-ordering__text-item{
+    position: relative;
+    font-family: 'Roboto Medium';
+    font-size: 2.3rem;
+    border: 0.07rem solid rgba(255, 255, 255, 0.5);
+    background: #000000;
+    padding: 3rem 2.6rem;
+    border-radius: 1.8rem;
+}
+.easier-ordering__text-item:nth-child(1){
+    bottom: 24rem;
+    left: 18rem;
+}
+.easier-ordering__text-item:nth-child(2){
+    bottom: 20rem;
+    right: 32rem;
+}
+.easier-ordering__text-item:nth-child(3){
+    right: 10rem;
+    top: 5rem;
+}
+.easier-ordering__text-item:nth-child(4){
+    left: 40rem;
+    bottom: 13rem;
+}
+.NOTAB{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(./src/img/NOTAB-BG.png);
+    background-size: 100% 110%;
+    position: relative;
+}
+.NOTAB .NOTAB__NOTAB-phone{
+    position: relative;
+    top: 25rem;
+    height: 42.8rem;
+    width: 85.8rem;
+}
+.NOTAB .NOTAB__NOTAB-display{
+    position: relative;
+    bottom: 15rem;
+    left: 0rem;
+    width: 67.5rem;
+    height: 37.7rem;
+}
+.Get-in-Touch .Get-in-Touch__form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.3rem;
+}
+input{
+    width: 81.8rem;
+    font-family: 'Noto Sans';
+    color: #000000;
+    padding: 2.9rem 2.3rem;
+    background: #FFFFFF;
+    border: 0.1rem solid #5C5C5C;
+    border-radius: 1rem;
+}
+input:required{
+    border: 0.1rem solid red;
+}
+.Get-in-Touch{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Get-in-Touch .Get-in-Touch__title{
+    font-family: 'Montserrat';
+    font-size: 5.1rem;
+    margin-top: 5rem;
+}
+.Get-in-Touch .Get-in-Touch__descr{
+    font-family: 'Noto Sans';
+    font-size: 1.8rem;
+    margin-top: 2.3rem;
+}
+.Get-in-Touch .Get-in-Touch__gradient{
+    position: relative;
+    bottom: 12rem;
+    right: 28rem;
+    width: 13.7rem;
+    height: 19rem;
+    background: linear-gradient(8.08deg, #F101BF 49.82%, #0066FF 69.06%);
+    opacity: .7;
+    filter: blur(12.5rem);
+}
+.Get-in-Touch .Get-in-Touch__form .Get-in-Touch__message{
+    height: 19.9rem;
+}
+.Get-in-Touch .Get-in-Touch__form .Get-in-Touch__city{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 86.8rem;
+    gap: 2.4rem;
+}
+.Get-in-Touch .Get-in-Touch__form .Get-in-Touch__send{
+    font-family: 'Montserrat';
+    font-size: 2.4rem;
+    padding: 2.5rem 16.7rem;
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+    margin-top: 6rem;
+}
+.Get-in-Touch .Get-in-Touch__form .Get-in-Touch__gradient-form{
+    right: 28rem;
+    width: 33.7rem;
+    height: 15rem;
+    left: 50rem;
+    bottom: 31rem;
+    z-index: -1;
+}
+.Get-in-Touch .Get-in-Touch__download{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Get-in-Touch .Get-in-Touch__download .Get-in-Touch__h3{
+    font-family: 'Noto Sans Bold';
+    font-size: 2.4rem;
+}
+.Get-in-Touch .Get-in-Touch__download .Get-in-Touch__img{
+    margin-top: 3.3rem;
+}
+.Get-in-Touch .Get-in-Touch__download .Get-in-Touch__img .Get-in-Touch__App-store{
+    width:  25.9rem;
+    height: 8.1rem;
+    margin-right: 2.95rem;
+}
+.Get-in-Touch .Get-in-Touch__download .Get-in-Touch__img .Get-in-Touch__Google-play{
+    width: 29.1rem;
+    height: 8.1rem;
+    margin-left: 2.95rem;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5rem 10rem 0;
+}
+.footer .footer__contacts .footer__text{
+    position: relative;
+    top: 13.5rem;
+}
+.footer .footer__contacts .footer__text .footer__NOTAB{
+    width: 8.1rem;
+    height: 1.6rem;
+}
+.footer .footer__contacts .footer__text .footer__mail{
+    font-family: 'Avenir Medium';
+    font-size: 1.8rem;
+    margin-top: 1.6rem;
+}
+.footer .footer__contacts .footer__text .footer__mail .footer__support-mail{
+    font-family: 'Avenir Bold';
+    font-size: 1.8rem;
+}
+.footer .footer__contacts .footer__text .footer__year{
+    font-family: 'Avenir Bold';
+    font-size: 1.8rem;
+    margin-top: 1.9rem;
+}
+.footer .footer__contacts .footer__gradient{
+    position: relative;
+    width: 21.05rem;
+    height: 21.1rem;
+    background: linear-gradient(8.08deg, #F101BF 19.82%, #0066FF 70.06%);
+    opacity: .7;
+    filter: blur(12.5rem);
+    z-index: -1;
+}
+.footer .footer__guide{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.footer .footer__guide .footer__Terms-to-use{
+    font-family: 'Avenir Bold';
+    font-size: 1.8rem;
+}
+.footer .footer__guide .footer__Privacy-policy{
+    font-family: 'Avenir Bold';
+    font-size: 1.8rem;
+    margin-top: 2.5rem;
+}
+

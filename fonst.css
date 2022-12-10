@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./src/fonts/Montserrat-ExtraBold.woff') format('woff');
+    font-weight: 700;
+    }
+@font-face {
+    font-family: 'Roboto Bold';
+    src: url('./src/fonts/Roboto-Bold.woff') format('woff');
+    font-weight: 700;
+    }
+@font-face {
+    font-family: 'Roboto Medium';
+    src: url('./src/fonts/Roboto-Medium.woff') format('woff');
+    font-weight: 500;
+    }
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('./src/fonts/NotoSans.woff') format('woff');
+    font-weight: 400;
+    }
+@font-face {
+    font-family: 'Noto Sans Medium';
+    src: url('./src/fonts/NotoSans-Medium.woff') format('woff');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Noto Sans Bold';
+    src: url('./src/fonts/NotoSans-Bold.woff') format('woff');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Avenir Medium';
+    src: url('./src/fonts/AvenirNextCyr-Medium.woff') format('woff');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Avenir Bold';
+    src: url('./src/fonts/AvenirNextCyr-Bold.woff') format('woff');
+    font-weight: 800;
+}
