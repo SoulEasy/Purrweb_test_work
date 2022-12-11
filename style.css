@@ -245,7 +245,7 @@ button:hover{
     display: flex;
     align-items:flex-end;
     justify-content: center;
-    background: linear-gradient( rgba(0, 0, 0, 1) , rgba(0, 0, 0, 0) 15%, rgba(0,0,0,1) 90%), url(./src/img/ID-scanner-bg.png);
+    background: linear-gradient( rgba(0, 0, 0, 1) , rgba(0, 0, 0, 0) 15%, rgba(0,0,0,1) 90%), url(./src/img/ID-scanner-bg.webp);
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -364,7 +364,7 @@ button:hover{
     flex-direction: row;
     align-items: flex-end;
     justify-content: center;
-    background:  url(./src/img/DJ-bg.png) no-repeat, url(./src/img/coctail-bg.png) no-repeat 100% 0%;
+    background:  url(./src/img/DJ-bg.webp) no-repeat, url(./src/img/coctail-bg.webp) no-repeat 100% 0%;
     background-size: 50% 60rem;
     margin-top: 30rem;
     width: 100%;
@@ -556,7 +556,7 @@ button:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: url(./src/img/NOTAB-BG.png);
+    background: url(./src/img/NOTAB-BG.webp);
     background-size: 100% 110%;
     position: relative;
 }
@@ -588,8 +588,8 @@ input{
     border: 0.1rem solid #5C5C5C;
     border-radius: 1rem;
 }
-input:required{
-    border: 0.1rem solid red;
+.error{
+    border: 0.2rem solid red;
 }
 .Get-in-Touch{
     display: flex;
@@ -623,8 +623,12 @@ input:required{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 86.8rem;
+    width: 81.8rem;
     gap: 2.4rem;
+}
+
+.Get-in-Touch .Get-in-Touch__form .Get-in-Touch__city  label  input{
+    width: 37.5rem;
 }
 .Get-in-Touch .Get-in-Touch__form .Get-in-Touch__send{
     font-family: 'Montserrat';
@@ -717,3 +721,489 @@ input:required{
     margin-top: 2.5rem;
 }
 
+@media(max-width:425px){
+    html{
+        font-size: calc(100vw / 425 * 10);
+    }
+    .container{
+        margin: 0rem 0rem;
+    }
+    .container .header{
+        margin: 4rem 1.5rem;
+        justify-content: space-between;
+    }
+    .container .header .header__logo .logo-img{
+        width: 5.2rem;
+        height: 5.3rem;
+    }
+    .container .header .header__logo .logo-text{
+        width: 4.6rem;
+        height: 1.2rem;
+    }
+    .container .header .header__login .login-img{
+        display: none;
+    }
+    .container .header .header__login .login-text{
+        padding: 0.5rem;
+        -webkit-text-stroke-width: 0.1rem;
+        -webkit-text-stroke-color: #000000;
+    }
+    .works__smarter{
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+        height: 50rem;
+        align-items: center;
+    }
+    .works__smarter .left-block{
+        margin-top: 0;
+        margin-left: 1.5rem;
+    }
+    .works__smarter .left-block .left-block__title{
+        font-size: 3.5rem;
+    }
+    .works__smarter .left-block .left-block__descr{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .works__smarter .left-block .left-block__descr .line__block .gradient{
+        width: 7.4rem;
+        height: 7.4rem;
+        left: -2rem;
+        bottom: 1rem;
+    }
+    .works__smarter .left-block .left-block__descr .line__block .line{
+        display: none;
+    }
+    .works__smarter .left-block .left-block__descr .txt{
+        position: relative;
+        bottom: 6.6rem;
+        font-size: 1.4rem;
+    }
+    .works__smarter .right__block .right__block__phone{
+        width: 20.1rem;
+        height: 42.3rem;
+        left: 8.5rem;
+        bottom: 5rem;
+    }
+    .works__smarter .right__block .right__block__blur{
+        width: 80rem;
+        height: 80rem;
+    }
+    .download{
+        flex-direction: column;
+        bottom: 10.5rem;
+    }
+    .download .download__text{
+        font-size: 2.4rem;
+    }
+    .download .download__market{
+        display: flex;
+        flex-direction: column;
+        margin-top: 3.4rem;
+    }
+    .img-app-store{
+        width: 18.5rem;
+        height: 6rem;
+        margin-right: 0;
+    }
+    .img-google-play{
+        width: 18.5rem;
+        height: 6rem;
+        margin-left: 0;
+        margin-top: 2.4rem;
+    }
+    .contact{
+        margin-top: -4.2rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact .contact__block{
+        width: 34.5rem;
+        padding: 3.9rem 3.3rem ;
+    }
+    .contact .contact__member{
+        margin-right: 0;
+    }
+    .contact .contact__parthner{
+        margin-left: 0;
+        margin-top: 3rem;
+    }
+    .contact .contact__text{
+        font-size: 2.4rem;
+    }
+    .contact .contact__mail{
+        font-size: 1.8rem;
+    }
+    .contact .contact__parthner .contact__login .contact__login-text{
+        font-size: 1.8rem;
+    }
+    .our-mission{
+        flex-direction: column-reverse;
+        align-items: normal;
+    }
+    .our-mission .our-mission__text{
+        bottom: -8rem;
+        margin-left: 1.5rem;
+    }
+    .our-mission .our-mission__text .our-mission__gradient{
+        background: radial-gradient(rgba(241, 1, 191, 0.5) 0%, rgba(241, 1, 191, 0.3) 0%, rgba(241, 1, 191, 0) 74%) no-repeat -1rem 0rem;
+        width: 18.5rem;
+        height: 18.5rem;
+        z-index: -1;
+    }
+    .our-mission .our-mission__text .our-mission__title{
+        position: relative;
+        bottom: 13rem;
+        font-size: 2.4rem;
+        background:none;
+    }
+    .our-mission .our-mission__text .our-mission__title br{
+        display: none;
+    }
+    .our-mission .our-mission__text .our-mission__descr{
+        position: relative;
+        bottom: 13rem;
+    }
+    .our-mission .our-mission__img{
+        transform: rotate(0);
+        width: 31.1rem;
+        height: 55.7rem;
+        left: 5rem;
+    }
+    .ID-scanner{
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+    .ID-scanner .ID-scanner__text{
+        margin: 0 1.5rem;
+        top: 22.5rem;
+    }
+    .ID-scanner .ID-scanner__text .ID-scanner__title{
+        font-size: 2.4rem;
+    }
+    .ID-scanner .ID-scanner__text .ID-scanner__descr{
+        font-size: 1.8rem;
+    }
+    .ID-scanner .ID-scanner__text .ID-scanner__descr br{
+        display: none;
+    }
+    .ID-scanner .ID-scanner__img{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        top: 29rem;
+    }
+    .ID-scanner .ID-scanner__img .ID-scanner__verification{
+        width: 28.7rem;
+        height: 57.6rem;
+        margin: 0 4.4rem;
+    }
+    .ID-scanner .ID-scanner__img .ID-scanner__verification:last-child{
+        margin-top: 5.5rem;
+    }
+    .BI-tool{
+        display: flex;
+        flex-direction: column;
+        margin-top: 25.8rem;
+        height: 60rem;
+        overflow: hidden;    
+    }
+    .BI-tool .BI-tool__text{
+        margin-right: 0;
+        margin-left: 1.5rem;
+    }
+    .BI-tool__text:before{
+        display: none;
+    }
+    .BI-tool .BI-tool__text .BI-tool__title{
+        margin-left: 0;
+        font-size: 2.4rem;
+    }
+    .BI-tool .BI-tool__text .BI-tool__descr{
+        margin-left: 0;
+        font-size: 1.6rem;
+    }
+    .BI-tool .BI-tool__img-block .BI-tool__img:nth-child(1){
+        display: none;
+    }
+    .BI-tool .BI-tool__img-block .BI-tool__img:nth-child(2){
+        width: 10.9rem;
+        height: 2.1rem;
+        top: 22.6rem;
+        right: -2.8rem;
+    }
+    .BI-tool .BI-tool__img-block .BI-tool__img:nth-child(3){
+        width: 9.1rem;
+        height: 5.5rem;
+        top: 30.2rem;
+        right: -1rem;
+    }
+    .BI-tool .BI-tool__img-block .BI-tool__img:nth-child(4){
+        width: 9.1rem;
+        height: 5.5rem;
+        top: 18.5rem;
+        left: 17.8rem;
+    }
+    .BI-tool .BI-tool__img-block .BI-tool__img:nth-child(5){
+        width: 14.5rem;
+        height: 8.6rem;
+        bottom: -22rem;
+        left: -3rem;
+    }
+    .BI-tool .BI-tool__img-block .BI-tool__img:nth-child(6){
+        width: 29.6rem;
+        height: 5.9rem;
+        top: 19.1rem;
+        left: 21.7rem;
+    }
+    .BI-tool .BI-tool__img-block .BI-tool__img:nth-child(7){
+        width: 8.6rem;
+        height: 9.1rem;
+        bottom: 6rem;
+        left: 26rem;
+    }
+    .QR-code{
+        flex-direction: column;
+        align-items: flex-start;
+        background: url(./src/img/DJ-bg.webp) no-repeat 100% 0rem/100%, url(./src/img/coctail-bg.webp) no-repeat 100% 55.1rem/60% 29.7rem;
+        /* background-size: 100% 33.5rem; */
+        margin-top: 0;
+    }
+    .QR-code .QR-code__text{
+        top: 22rem;
+        left: 1.5rem;
+        width: 90%;
+    }
+    .QR-code .QR-code__text .QR-code__title{
+        font-size: 2.4rem;
+        margin-left: 1.5rem;
+    }
+    .QR-code .QR-code__text .QR-code__descr{
+        font-size: 1.6rem;
+        width: 80%;
+        margin-top: 3.1rem;
+        margin-left: 1.5rem;
+    }
+    .QR-code .QR-code__text .QR-code__descr br{
+        display: none;
+    }
+    .QR-code .QR-code__text .QR-code__img-block{
+        display: flex;
+        flex-direction: column;
+        margin-top: 5rem;
+    }
+    .QR-code .QR-code__right-block{
+        flex-direction: column;
+        margin: 29rem auto 0;
+        align-items: normal;
+    }
+    .QR-code .QR-code__right-block .QR-code__phone-left{
+        margin-left: 0;
+        top: 8.5rem;
+    }
+    .QR-code .QR-code__right-block .QR-code__phone-block{
+        margin-left: 0;
+        align-items: flex-start;
+    }
+    .QR-code .QR-code__right-block .QR-code__phone{
+        width: 28.1rem;
+        height: 56.4rem;
+    }
+    .QR-code .QR-code__right-block .QR-code__phone-block .QR-code__phone-right{
+        top: 7rem;
+    }
+    .QR-code .QR-code__right-block .QR-code__phone-block .QR-code__nightlife{
+        position: relative;
+        bottom: 57rem;
+        right: 5rem;
+    }
+    .scan-QR{
+        display: flex;
+        flex-direction: column-reverse;
+        background-size: 100% 137%;
+    }
+    .scan-QR .scan-QR__text{
+        bottom: -34rem;
+        flex-direction: column;
+        margin: 0 0 0 1.5rem;
+        align-items: flex-start;
+    }
+    .scan-QR .scan-QR__text .scan-QR__title{
+        font-size: 2.4rem;
+    }
+    .scan-QR .scan-QR__text .scan-QR__title br{
+        display: none;
+    }
+    .scan-QR .scan-QR__text .scan-QR__descr{
+        font-size: 1.5rem;
+        margin-top: 2.4rem;
+    }
+    .scan-QR .scan-QR__generate-QR-code .scan-QR__img-block .scan-QR__generate-QR-img{
+        width: 18.1rem;
+        height: 36.4rem;
+        top: 41rem;
+        left: 5rem;
+    }
+    .scan-QR .scan-QR__generate-QR-code .scan-QR__img-block .scan-QR__arrow{
+        top: 44rem;
+        left: 5.3rem;
+        width: 8rem;
+        height: 7rem;
+        transform: rotate(25deg);
+    }
+    .scan-QR .scan-QR__generate-QR-code .scan-QR__img-block .scan-QR__inscription{
+        top: 45.9rem;
+        left: 18.5rem;
+        font-size: 1.8rem;
+    }
+    .scan-QR .scan-QR__generate-QR-code .scan-QR__gradient{
+        width: 40.6rem;
+        height: 48.5rem;
+        bottom: 4rem;
+    }
+    .easier-ordering{
+     flex-direction: column; 
+     bottom: 6.4rem;  
+    }
+    .easier-ordering .easier-ordering__text{
+        left: 1.5rem;
+    }
+    .easier-ordering .easier-ordering__text .easier-ordering__title{
+        font-size: 2.4rem;
+    }
+    .easier-ordering .easier-ordering__text .easier-ordering__descr{
+        font-size: 1.6rem;
+    }
+    .easier-ordering .easier-ordering__img-block .easier-ordering__img{
+        width: 36rem;
+        height: 43rem;
+    }
+    .easier-ordering .easier-ordering__img-block .easier-ordering__text-block .easier-ordering__text-item{
+        padding: 1.3rem 1.5rem;
+        font-size: 1.4rem;
+    }
+    .easier-ordering .easier-ordering__img-block{
+        bottom: 12.5rem;
+        height: 37rem;
+    }
+    .easier-ordering__text-item:nth-child(1){
+        bottom: -9.8rem;
+        left: -27rem;
+    }
+    .easier-ordering__text-item:nth-child(2){
+        bottom: -13rem;
+        right: 9rem;
+    }
+    .easier-ordering__text-item:nth-child(3){
+        right: 25rem;
+        top: 39rem;
+    }
+    .easier-ordering__text-item:nth-child(4){
+        left: -6rem;
+        bottom: -43rem;
+    }
+    .easier-ordering .easier-ordering__text .easier-ordering__gradient{
+        left: 23rem;
+    }
+    .NOTAB{
+        display: none;
+    }
+    .Get-in-Touch .Get-in-Touch__title{
+        font-size: 2.4rem;
+    }
+    .Get-in-Touch .Get-in-Touch__descr{
+        font-size: 1.6rem;
+        margin: 2.4rem 2.6rem 0;
+    }
+    input{
+        width: 34.5rem;
+    }
+    .Get-in-Touch .Get-in-Touch__form .Get-in-Touch__city{
+        width: 34.5rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Get-in-Touch .Get-in-Touch__form .Get-in-Touch__city label input{
+        width: 34.5rem;
+    }
+    .Get-in-Touch .Get-in-Touch__form .Get-in-Touch__gradient-form{
+        width: 13.7rem;
+        height: 30rem;
+        left: 14rem;
+        bottom: 15rem;
+    }
+    .Get-in-Touch .Get-in-Touch__download{
+        position: relative;
+        bottom: 24.6rem;
+    }
+    .Get-in-Touch .Get-in-Touch__download .Get-in-Touch__h3{
+        font-size: 2.4rem;
+    }
+    .Get-in-Touch .Get-in-Touch__download .Get-in-Touch__img{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Get-in-Touch .Get-in-Touch__download .Get-in-Touch__img .Get-in-Touch__App-store{
+        width: 18.5rem;
+        height: 6rem;
+        margin-right: 0;
+    }
+    .Get-in-Touch .Get-in-Touch__download .Get-in-Touch__img .Get-in-Touch__Google-play{
+        width: 18.5rem;
+        height: 6rem;
+        margin-left: 0;
+        margin-top: 1.4rem;
+    }
+    .footer{
+        flex-direction: column-reverse;
+        height: 24.4rem;
+    }
+    .footer .footer__contacts{
+        position: relative;
+        bottom: 32.2rem;
+    }
+    .footer .footer__contacts .footer__text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: 38.3rem;
+    }
+    .footer .footer__contacts .footer__text .footer__mail{
+        font-size: 1.4rem;
+    }
+    .footer .footer__contacts .footer__text .footer__mail br{
+        display: none;
+    }
+    .footer .footer__contacts .footer__text .footer__mail .footer__support-mail{
+        font-size: 1.4rem;
+    }
+    .footer .footer__contacts .footer__text .footer__year{
+        font-size: 1.4rem;
+    }
+    .footer .footer__guide{
+        bottom: 24.6rem;
+    }
+    .footer .footer__guide .footer__Terms-to-use{
+        font-size: 1.8rem;
+    }
+    .footer .footer__guide .footer__Privacy-policy{
+        font-size: 1.8rem;
+    }
+    .footer .footer__contacts .footer__gradient{
+        width: 9.05rem;
+        top: 31rem;
+    }
+    .cookie{
+        width: 91%;
+    }
+    .cookie .cookie__text{
+        font-size: 1.2rem;
+        width: 50%;
+    }
+    .cookie .cookie__btn{
+        font-size: 1.4rem;
+        padding: 1.6rem 3.6rem;
+    }
+}
